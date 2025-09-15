@@ -1,0 +1,76 @@
+/* Definições globais */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos. */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos. */
+    box-sizing: border-box; /* Garante que o preenchimento e a borda sejam incluídos na largura e altura total do elemento, facilitando o layout. */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Define a fonte padrão para todos os elementos. */
+}
+
+body {
+    background-color: rgb(243, 197, 229); /* Define uma cor de fundo clara para a página. */
+    color: #bc08e9; /* Define a cor principal do texto como um cinza escuro. */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas do texto para melhorar a legibilidade. */
+    font-weight: 500;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: rgb(243, 197, 229); /* Cor de fundo azul escuro para o cabeçalho. */
+    color: #bc08e9; /* Cor do texto dentro do cabeçalho. */
+    padding: 15px 0; /* Adiciona preenchimento superior e inferior de 15px, e 0 nas laterais. */
+    position: sticky; /* Torna o cabeçalho "pegajoso", ou seja, ele fica fixo no topo ao rolar a página. */
+    top: 0; /* Define a distância do topo da tela. */
+    z-index: 100; /* Define a ordem de empilhamento, garantindo que o cabeçalho fique sobre outros elementos. */
+}
+
+.menu-lateral{
+    position: fixed;
+    text-align: left;
+}
+.menu {
+    background-color: #bc08e9;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    justify-content: left;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.hamburguer {
+    list-style: disc;
+    display: grid;
+    justify-content: left;
+    gap: 30px;
+}
+
+.carrossel {
+    display: grid;
+    text-align:center;
+    
+    gap: 30px;
+}
+/* Espaço extra para não esconder o conteúdo */
+main {
+    padding-top: 80px;
+    text-align: center;
+}
