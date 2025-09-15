@@ -1,0 +1,13 @@
+
+
+body{
+    background-color: rgb(235, 163, 245);
+        font-size: 60;
+    }
+    p{
+    color: purple;
+    column-count: 2
+    text-align: center;
+    }
+
+}
